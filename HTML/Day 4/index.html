@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Examples</title>
+  <style>
+    table {
+      border-collapse: separate;
+      border-spacing: 10px; /* cellspacing */
+      margin-bottom: 30px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px; /* cellpadding */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔸 Table 1: Basic Table with cellpadding and cellspacing</h2>
+  <table>
+    <tr>
+      <th>Sr</th>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Alice</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Bob</td>
+      <td>90</td>
+    </tr>
+  </table>
+
+  <h2>🔸 Table 2: Using colspan</h2>
+  <table>
+    <tr>
+      <th colspan="3">Student Report</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>Math</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>Science</td>
+      <td>88</td>
+    </tr>
+  </table>
+
+  <h2>🔸 Table 3: Using rowspan</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th rowspan="2">Subject</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>Daisy</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>Ella</td>
+      <td>English</td>
+      <td>89</td>
+    </tr>
+  </table>
+
+</body>
+</html>
