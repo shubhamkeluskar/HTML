@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      text-align: center;
+    }
+    iframe, video, audio {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+    @media (max-width: 600px) {
+      body {
+        background-color: #f0f0f0;
+      }
+      table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Sample Table with Rowspan and Colspan</h2>
+  <table>
+    <tr>
+      <th rowspan="2">Name</th>
+      <th colspan="2">Scores</th>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>Science</td>
+    </tr>
+    <tr>
+      <td>Shubham</td>
+      <td>90</td>
+      <td>95</td>
+    </tr>
+  </table>
+
+  <h2>Embedded Video</h2>
+  <video controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>Embedded Audio</h2>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Embedded Website (iframe)</h2>
+  <iframe src="https://www.google.com" height="300" title="Example Website"></iframe>
+
+</body>
+</html>
